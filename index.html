@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PJ Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!--Navbar -->
+    <header>
+      <nav>
+        <div class="left">Prajwol Ramtel</div>
+        <div class="right">
+          <ul>
+            <!--<li><a href="#Home">Home</a></li> -->
+            <li><a href="#Education">Education</a></li>
+            <li><a href="#Experience">Experience</a></li>
+            <li><a href="#Skills">Skills</a></li>
+            <li><a href="#Projects">Project</a></li>
+            <li><a href="#Contact">Contact Me</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!--Left Section for the image and the right one for the intro and the link to my profile-->
+      <section class="firstSection">
+        <div class="leftSection"></div>
+        <div class="rightSection">
+          Hi, My name is <span class="text-purple">Prajwol</span>
+          <div>and I am a passionate</div>
+          <span id="element"></span>
+          <div class="btn-box">
+            <a href="https://drive.google.com/file/d/16fj9RNoBLGV_RmnbT77CSgyNPIigg7vw/view?usp=sharing" target="blank"
+              ><button class="btn">Download CV</button></a
+            >
+            <a href="https://github.com/ramtelPJ" target="_blank"
+              ><button class="btn">Visit GitHub</button></a
+            >
+          </div>
+        </div>
+      </section>
+<!--Education Section -->
+      <section id="Education" class="EduSection">
+        <div class="sectionbox">
+          <h1>Education</h1>
+          <div class="education-grid">
+           
+            <div class="education-item">
+              <img
+                src="img-logo/ulm_logo.png"
+                alt="High School Logo"
+                class="education-logo"
+              />
+              <div class="education-details">
+                <div class="education-header">
+                  <span class="institution-name"
+                    >University of Louisiana at Monroe (ULM)</span
+                  >
+                  <span class="graduation-date">Aug 2023-Present</span>
+                </div>
+                <p class="education-description">Education</p>
+              </div>
+            </div>
+            <!-- University Education -->
+            <div class="education-item">
+              <img
+                src="img-logo/NIST.png"
+                alt="University Logo"
+                class="education-logo"
+              />
+              <div class="education-details">
+                <div class="education-header">
+                  <span class="institution-name"
+                    >National Institute of Science and Technology (NIST)</span
+                  >
+                  <span class="graduation-date">Sep 2020-Aug 2022</span>
+                </div>
+
+                <p class="education-description">
+                  Bachelor of Science in Computer Science
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!-- Updated Work Experience Section -->
+<section id="Experience" class="secondSection">
+  <h1>Work Experience</h1>
+  <div class="experience-grid">
+    <div class="experience-item">
+      <img src="img-logo/helpdesk.png" alt="IT Helpdesk Logo" class="experience-logo" />
+      <div class="experience-details">
+        <div class="experience-header">
+          <span class="job-title">IT Helpdesk | University Of Louisiana at Monroe</span>
+          <span class="job-date">2023-Present</span>
+        </div>
+        <p class="job-description">
+          IT Support Technician at the University of Louisiana at Monroe,
+          providing technical assistance for computers, printers, and
+          networks across campus. Delivered 80+ hours of support, resolved
+          100+ technical tickets, and maintained a 95% user satisfaction
+          rate by troubleshooting administrative functions and network
+          account setups.
+        </p>
+      </div>
+    </div>
+    <div class="experience-item">
+      <img src="img-logo/developer.png" alt="Web Development Logo" class="experience-logo" />
+      <div class="experience-details">
+        <div class="experience-header">
+          <span class="job-title">Web Development Intern | Department of Passport Nepal</span>
+          <span class="job-date">2020-2021</span>
+        </div>
+        <p class="job-description">
+          Managed and optimized a secure passport database with Node.js,
+          handling 1,500+ monthly records. Assisted in improving backend
+          systems, reducing data entry errors by 20%, and boosting
+          performance. Developed a time appointment system, enhancing data
+          retrieval efficiency and reducing query response time by 15%.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+      <!-- Skills Section -->
+      <section id="Skills" class="skillsSection">
+        <div class="sectionContainer">
+          <h1>Skills</h1>
+          <div class="skills-toggle">
+            <button id="toggleLanguages" class="toggle-btn active">
+              Languages
+            </button>
+            <button id="toggleFrameworks" class="toggle-btn">Frameworks & Tools</button>
+          </div>
+          <div class="skills-grid" id="languagesGrid">
+
+            
+            
+            <div class="skill-item">
+              <img src="img-logo/html-logo.png" alt="HTML Logo" class="skill-logo" />
+              <span>HTML</span>
+            </div>
+            <div class="skill-item">
+              <img src="img-logo/css-logo.png" alt="CSS Logo" class="skill-logo" />
+              <span>CSS</span>
+            </div>
+            <div class="skill-item">
+              <img
+                src="img-logo/javascript-logo.png"
+                alt="JavaScript Logo"
+                class="skill-logo"
+              />
+              <span>JavaScript</span>
+            </div>
+            <div class="skill-item">
+              <img src="img-logo/python-logo.png" alt="Python Logo" class="skill-logo" />
+              <span>Python</span>
+            </div>
+            <div class="skill-item">
+              <img src="img-logo/java-logo.png" alt="Java Logo" class="skill-logo" />
+              <span>Java</span>
+            </div>
+            <div class="skill-item">
+              <img src="img-logo/sql-logo.png" alt="SQL Logo" class="skill-logo" />
+              <span>SQL</span>
+            </div>
+          </div>
+          <div class="skills-grid" id="frameworksGrid" style="display: none">
+            
+            
+            <div class="skill-item">
+              <img src="img-logo/react-logo.png" alt="React Logo" class="skill-logo" />
+              <span>React</span>
+            </div>
+            <div class="skill-item">
+              <img
+                src="img-logo/tailwind-logo.png"
+                alt="Tailwind CSS Logo"
+                class="skill-logo"
+              />
+              <span>Tailwind CSS</span>
+            </div>
+            <div class="skill-item">
+              <img src="img-logo/git-logo.png" alt="git Logo" class="skill-logo" />
+              <span>Git</span>
+            </div>
+            <div class="skill-item">
+              <img src="img-logo/github-logo.png" alt="github Logo" class="skill-logo" />
+              <span>GitHub</span>
+            </div>
+            <div class="skill-item">
+              <img src="img-logo/vscode-logo.png" alt="Vscode Logo" class="skill-logo" />
+              <span>VS Code</span>
+            </div>
+          </div>
+        </div>
+<!-- Project Section -->
+      </section>
+      <section id="Projects" class="projectsSection">
+        <div class="sectionContainer">
+          <h1>Projects</h1>
+          <div class="projects-grid">
+          
+            <div class="project-item">
+              <h3 class="project-title">Dice Game 🎲</h3>
+              <p class="project-description">A simple browser-based dice game where players take turns rolling the dice to accumulate points. The first player to reach the winning score wins the game!</p>
+              <a
+                href="https://github.com/ramtelPJ/Dice-Game"
+                target="_blank"
+                class="project-link"
+              >
+                <i class="fab fa-github"></i> View on GitHub
+              </a>
+            </div>
+            
+            <div class="project-item">
+              <h3 class="project-title">Chat AI Agent 💬</h3>
+              <p class="project-description">An AI agent built with **n8n** and **OpenAI** to automate **emails** and **calendar events**, making workflows easier and faster. 🚀</p>
+              <a
+                href="https://github.com/ramtelPJ/n8n-AI_agent"
+                target="_blank"
+                class="project-link"
+              >
+                <i class="fab fa-github"></i> View on GitHub
+              </a>
+            </div>
+            <div class="project-item">
+              <h3 class="project-title">Quiz Game 📚</h3>
+              <p class="project-description">Ongoing Project.....</p>
+              <a
+                href=""
+                target="_blank"
+                class="project-link"
+              >
+                <i class="fab fa-github"></i> View on GitHub
+              </a>
+            </div>
+            
+            <div class="project-item">
+              <h3 class="project-title">Forkify App 🍽️</h3>
+              <p class="project-description">Ongoing Project.....</p>
+              <a
+                href="https://github.com/your-github-repo"
+                target="_blank"
+                class="project-link"
+              >
+                <i class="fab fa-github"></i> View on GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Contact Me  Section -->
+      <section id="Contact" class="contactSection">
+        <div class="sectionContainer">
+          <h1>Contact Me</h1>
+          <div class="contact-content">
+            <div class="contact-info">
+              <p>Email:ramtelpj@gmail.com</p>
+              <p>Phone: +1 (318) 512-7500</p>
+            </div>
+            <form class="contact-form">
+              <input type="text" placeholder="Name" />
+              <input type="email" placeholder="Email" />
+              <textarea placeholder="Message"></textarea>
+              <button class="btn">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <!-- Footer Section -->
+      <div class="footer">
+        <div class="footer-first">
+          <h3>Prajwol's Portfolio</h3>
+        </div>
+        <div class="footer-icons">
+          <a
+            href=https://www.linkedin.com/in/prajwol-ramtel-00a6a9283/
+            target="_blank"
+            class="icon-circle"
+          >
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a
+            href="https://github.com/ramtelPJ"
+            target="_blank"
+            class="icon-circle"
+          >
+            <i class="fab fa-github"></i>
+          </a>
+          <a
+            href="https://leetcode.com/u/prajwol_ramtel/"
+            target="_blank"
+            class="icon-circle"
+          >
+            <i class="fa-brands fa-codepen"></i>
+          </a>
+        </div>
+      </div>
+      <div class="footer-rights">
+        Copyright &#169; www.prajwolportfolio.com | All rights reserved
+      </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
