@@ -24,9 +24,9 @@ export default function Achievements() {
           {achievements.map((achievement) => {
             const Icon = CATEGORY_ICON[achievement.category];
             return (
-              <Reveal key={achievement.id} variants={scaleIn}>
+              <Reveal key={achievement.id} variants={scaleIn} className="h-full">
                 <div
-                  className={`group relative overflow-hidden rounded-2xl border bg-glass p-6 transition-transform hover:-translate-y-1 ${
+                  className={`group relative flex h-full flex-col overflow-hidden rounded-2xl border bg-glass p-6 transition-transform hover:-translate-y-1 ${
                     achievement.placeholder
                       ? "border-dashed border-glass-border"
                       : "border-gold/40"
