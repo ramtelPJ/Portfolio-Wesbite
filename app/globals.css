@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+:root {
+  /* Backgrounds */
+  --background-primary: #080a0f;
+  --background-secondary: #10141d;
+  --surface: #151a24;
+  --glass: rgba(255, 255, 255, 0.06);
+  --glass-border: rgba(255, 255, 255, 0.1);
+
+  /* Text */
+  --text-primary: #f5f7fa;
+  --text-secondary: #a7b0c0;
+
+  /* Brand */
+  --gold: #f6c85f;
+  --gold-highlight: #ffd978;
+  --electric-blue: #00aeef;
+  --neon-cyan: #00e5ff;
+  --achievement-green: #3dff9a;
+  --accent-purple: #8b5cf6;
+
+  --font-display: var(--font-barlow-condensed);
+  --font-sans: var(--font-inter);
+}
+
+@theme inline {
+  --color-background-primary: var(--background-primary);
+  --color-background-secondary: var(--background-secondary);
+  --color-surface: var(--surface);
+  --color-glass: var(--glass);
+  --color-glass-border: var(--glass-border);
+
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+
+  --color-gold: var(--gold);
+  --color-gold-highlight: var(--gold-highlight);
+  --color-electric-blue: var(--electric-blue);
+  --color-neon-cyan: var(--neon-cyan);
+  --color-achievement-green: var(--achievement-green);
+  --color-accent-purple: var(--accent-purple);
+
+  --font-display: var(--font-display);
+  --font-sans: var(--font-sans);
+}
+
+* {
+  border-color: var(--glass-border);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background-primary);
+  color: var(--text-primary);
+  font-family: var(--font-sans), system-ui, sans-serif;
+}
+
+::selection {
+  background: var(--gold);
+  color: var(--background-primary);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
