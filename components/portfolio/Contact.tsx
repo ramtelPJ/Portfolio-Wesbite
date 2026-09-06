@@ -10,8 +10,9 @@ import { slideRight, slideLeft } from "@/utils/animations";
 const inputClass =
   "w-full rounded-lg border border-glass-border bg-background-secondary px-4 py-3 text-sm text-text-primary placeholder:text-text-secondary/60 outline-none transition-colors focus:border-gold";
 
-export default function Contact() {
+export default function Contact({ resumeVersion }: { resumeVersion: number }) {
   const { social } = portfolioData;
+  const resumeHref = `${social.resume}?v=${resumeVersion}`;
   const [sent, setSent] = useState(false);
 
   function handleSubmit(e: FormEvent<HTMLFormElement>) {
@@ -63,7 +64,7 @@ export default function Contact() {
                 GitHub
               </a>
               <a
-                href={social.resume}
+                href={resumeHref}
                 target="_blank"
                 rel="noreferrer"
                 className="flex items-center gap-3 rounded-xl border border-glass-border bg-glass px-4 py-3.5 text-sm font-semibold text-text-primary transition-colors hover:border-gold/50 hover:text-gold"

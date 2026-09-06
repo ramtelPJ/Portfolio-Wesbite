@@ -10,8 +10,11 @@ import ExperienceTimeline from "@/components/portfolio/ExperienceTimeline";
 import Achievements from "@/components/portfolio/Achievements";
 import Statistics from "@/components/portfolio/Statistics";
 import Contact from "@/components/portfolio/Contact";
+import { getResumeVersion } from "@/lib/resume-version";
 
 export default function Home() {
+  const resumeVersion = getResumeVersion();
+
   return (
     <>
       <CinematicIntro />
@@ -25,7 +28,7 @@ export default function Home() {
         <ExperienceTimeline />
         <Achievements />
         <Statistics />
-        <Contact />
+        <Contact resumeVersion={resumeVersion} />
       </main>
       <Footer />
     </>
