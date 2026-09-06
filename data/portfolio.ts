@@ -1,12 +1,10 @@
 import type { PortfolioData } from "@/types/portfolio";
 
-// Placeholders to verify before this goes live: rating/skill/radar/metric numbers
-// (no such scores existed anywhere before), project years, and the two achievement
-// entries (no real awards/certifications were provided — replace them).
+
 export const portfolioData: PortfolioData = {
   personal: {
     name: "Prajwol Ramtel",
-    role: "Full-Stack Developer",
+    role: "Software Engineer | IT Support Technician",
     rating: 87,
     location: "Monroe, Louisiana",
     status: "Open to opportunities",
